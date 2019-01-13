@@ -16,7 +16,7 @@ function(groupDTM, group, graph = FALSE, export = TRUE) {
                                  opacityNoHover = 0.25)
   
   if(export) {
-    htmlwidgets::saveWidget(KD3, paste0("KDVizGroup",group,".html"))
+    htmlwidgets::saveWidget(KD3, paste0("KDVizGroup",group,".html"), selfcontained=FALSE)
   }
   
   if(graph) {
